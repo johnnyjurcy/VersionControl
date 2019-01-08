@@ -1,0 +1,138 @@
+   12	git init //initializing the file
+   13	git status//to check the status of the file
+   14	git add <filename>//if not added to statergy add it
+   after adding we have to commit in local machine as below
+
+   19  git commit -m "this is my version 1" 
+   20  git status	//to view the file is stored in local machine
+   21  git log	//to view the log 
+   24  git log --oneline	//to view the log in one line
+
+
+   //initiating with the user name and email
+   git config --global user.name "Prashanth"
+   git config --global user.email "prashanthbit121@gmail.com"
+
+
+	//TO create of hard and soft 
+soft:(it just goes for the previous commited mode)
+   26  git reset --soft HEAD^
+   27  git status
+   28  git log --oneline
+   29  git reset HEAD .
+   30  git status
+   31  git rm k1.js
+   32  git log
+ hard:(it removes the file manually from the file and directory)
+   33  git log --oneline
+   34  git reset --hard HEAD^
+   35  git log --oneline
+   36  git status
+   37  git add .
+   38  git add .
+   39  git status
+   40  git commit -m "this versio2" 
+  
+
+  //to send from local machine to remote if commited the content at begining 
+   95  git status
+   96  git init
+   97  git add *
+   98  git status
+   99  git commit -m "new version of code 1.1"
+  100  ls
+  101  git remote add origin https://github.com/Prashi121/node.git
+  102  git remote -v //it is to view both the fetcha and merge contents
+  103  git push -u origin master
+  104  git push -u origin master
+  
+  //to send from local machine to remote from if commited the content at last
+  107  git status
+  108  git init
+  109  git add README.md
+  110  echo "# dev-git" >> README.md
+  111  git init
+  112  git add README.md
+  113  git add .
+  114  git commit -m "first commit"
+  115  git remote add origin https://github.com/Prashi121/node.git
+  116  git push -u origin master
+  117  git config --list --show-origin//origin path
+	
+
+	//to pull the request  
+  126  git commit -a -m "this is version1 in prashanth"
+  127  git status
+  128  git push -u origin master
+  129  cat project1.js 
+  136  git pull origin master
+  137  git diff project1.js
+  138  git pull origin master
+  139  vi project1.js 
+  140  git push -u origin master
+  
+  //craete the branch   
+  155  git push -u origin master
+  156  git branch
+  157  git branch pop
+  158  git branch
+  159  ls
+  161   git checkout pop //to swicth from master to pop(branch)
+  162  git branch
+  163  ls
+  164  git status
+  165  vi test.js
+  166  ls
+  167  git status
+  168  git add --all
+  169  git status
+  170  git commit -a -m "this is prashanth" 
+  171  git status
+  172  git checkout master //to swicth to master
+  173  ls
+  174  git checkout pop
+  175  ls
+  176  git checkout master
+  177  git merge pop //mergeing both master and pop
+  178  git branch
+  179  ls
+  180  git status
+  181  git push -u origin master
+  182  git push -u origin pop
+  183  git branch -D pop//delete the branch pop
+  184  git status
+  
+
+
+
+
+  //uplaoded project in git hub
+  318  git status
+  319  git init
+  320  git add server.js 
+  321  git add p*
+  322  git status
+  323  git add c*
+  324  git status
+  325  git add d*
+  326  git add r*
+  327  git status
+  328  git add n*
+  329  git status
+  330  git commit -m "version1" 
+  331  git remote add origin https://github.com/Prashi121/basic.git
+  332  git push -u origin master
+  333  echo "# temp" >> README.md
+  334  git init
+  335  git add README.md
+  336  git remote add origin https://github.com/Prashi121/temp.git
+  337  git push -u origin master
+  338  git remote add origin https://github.com/Prashi121/basic.git
+  339  git push -u origin master
+  340  git pull origin master
+  341  git status
+  342  git commit -m "comitted for templete" README.md 
+  343  git push -u origin master
+  344  git push -u origin master
+  345  cd /c/Prashanth/sampleProj/Project-1/nodejs/
+  
